@@ -1,16 +1,17 @@
-import React from 'react'
+import Wrapper from '../assets/wrappers/searchBar'
 
 const SearchBar = () => {
   return (
-    <div className='header-box'>
-      <form action='' className='search-form'>
-        <input type='teat' placeholder='search here...' className='search-ip' />
-        <button className='search-btn'>
-          <span className='material-icons'>search</span>
-        </button>
-      </form>
-    </div>
+    <Wrapper action='post'>
+      <input
+        type='search'
+        placeholder='Search free high-resolution photos'
+        className='search-ip'
+      />
+      <button className='search-btn'>
+        <span className='material-icons'>search</span>
+      </button>
+    </Wrapper>
   )
 }
-
 export default SearchBar

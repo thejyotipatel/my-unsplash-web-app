@@ -1,7 +1,9 @@
-import React from 'react'
+import { Display_Alert, Clear_Alert } from './action'
 
-const reducer = () => {
-  return <div>reducer</div>
+const reducer = (state, action) => {
+  // if(action)return
+
+  throw new Error(`no such action type: ${action.type}`)
 }
 
 export default reducer
